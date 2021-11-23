@@ -1,0 +1,40 @@
+.pc__addproduct--card__form input[type="text"],
+.pc__addproduct--card__form input[type="email"],
+.pc__addproduct--card__form input[type="password"],
+.pc__addproduct--card__form textarea,
+.pc__addproduct--card__form select {
+  border-radius: 4px;
+}
+
+.pc__addproduct--card__form input[type="text"]:focus,
+.pc__addproduct--card__form input[type="email"]:focus,
+.pc__addproduct--card__form input[type="password"]:focus,
+.pc__addproduct--card__form textarea:focus,
+.pc__addproduct--card__form select:focus {
+  --tw-ring-color: #6b7280;
+  border-color: #6b7280;
+}
+
+.pc__addproduct--card__form input[type="text"].input__error,
+.pc__addproduct--card__form input[type="email"].input__error,
+.pc__addproduct--card__form input[type="password"].input__error,
+.pc__addproduct--card__form textarea.input__error {
+  border-color: #f87171;
+}
+.pc__addproduct--card__form input[type="text"].input__error:focus,
+.pc__addproduct--card__form input[type="email"].input__error:focus,
+.pc__addproduct--card__form input[type="password"].input__error:focus,
+.pc__addproduct--card__form textarea.input__error:focus {
+  --tw-ring-color: #f87171;
+  border-color: #f87171;
+}
+
+.input__checkbox input {
+  margin-right: 1rem;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.pc__addproduct--message {
+  transition: all 0.3s ease-in-out;
+}

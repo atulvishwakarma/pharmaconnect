@@ -1,0 +1,21 @@
+.pc__login--card__form input {
+  border-radius: 4px;
+}
+.pc__login--card__form input:focus {
+  --tw-ring-color: #6b7280;
+  border-color: #6b7280;
+}
+
+.pc__login--card__form input.input__error {
+  border-color: #f87171;
+  /* box-shadow: 0 0 0 #f87171; */
+}
+.pc__login--card__form input.input__error:focus {
+  --tw-ring-color: #f87171;
+  border-color: #f87171;
+}
+
+.pc__login--card__form button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}

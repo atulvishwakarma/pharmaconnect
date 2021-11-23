@@ -1,0 +1,136 @@
+{
+  "product": [
+    {
+      "id": 1,
+      "title": "Product 1",
+      "imagePath": "http://localhost:3000/static/media/Image-Coming-Soon.586d424d.png",
+      "isFeature": true,
+      "shortDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum accusamus deleniti sequi nulla officia quod mollitia doloremque aspernatur, eius dolor beatae sunt nam sapiente, odio omnis. Quis debitis consectetur nam?",
+      "desc": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta perspiciatis deserunt commodi enim saepe sapiente at tempore necessitatibus ratione sint iusto voluptate eaque possimus consequuntur, nulla id magnam veritatis dignissimos illum porro dolore nostrum minus laboriosam blanditiis? Architecto voluptatem enim quo facilis deleniti, doloribus fugit ea, eligendi commodi, neque deserunt.",
+      "pros": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "cons": "Dicta perspiciatis deserunt commodi enim saepe sapiente",
+      "stock": true,
+      "price": 10.0
+    },
+    {
+      "id": 2,
+      "title": "Product 2",
+      "imagePath": "http://localhost:3000/static/media/Image-Coming-Soon.586d424d.png",
+      "isFeature": true,
+      "shortDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum accusamus deleniti sequi nulla officia quod mollitia doloremque aspernatur, eius dolor beatae sunt nam sapiente, odio omnis. Quis debitis consectetur nam?",
+      "desc": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta perspiciatis deserunt commodi enim saepe sapiente at tempore necessitatibus ratione sint iusto voluptate eaque possimus consequuntur, nulla id magnam veritatis dignissimos illum porro dolore nostrum minus laboriosam blanditiis? Architecto voluptatem enim quo facilis deleniti, doloribus fugit ea, eligendi commodi, neque deserunt.",
+      "pros": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "cons": "Dicta perspiciatis deserunt commodi enim saepe sapiente",
+      "stock": true,
+      "price": 10.0
+    },
+    {
+      "id": 3,
+      "title": "Product 3",
+      "imagePath": "http://localhost:3000/static/media/Image-Coming-Soon.586d424d.png",
+      "isFeature": true,
+      "shortDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum accusamus deleniti sequi nulla officia quod mollitia doloremque aspernatur, eius dolor beatae sunt nam sapiente, odio omnis. Quis debitis consectetur nam?",
+      "desc": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta perspiciatis deserunt commodi enim saepe sapiente at tempore necessitatibus ratione sint iusto voluptate eaque possimus consequuntur, nulla id magnam veritatis dignissimos illum porro dolore nostrum minus laboriosam blanditiis? Architecto voluptatem enim quo facilis deleniti, doloribus fugit ea, eligendi commodi, neque deserunt.",
+      "pros": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "cons": "Dicta perspiciatis deserunt commodi enim saepe sapiente",
+      "stock": true,
+      "price": 10.0
+    },
+    {
+      "id": 4,
+      "title": "Product 4",
+      "imagePath": "http://localhost:3000/static/media/Image-Coming-Soon.586d424d.png",
+      "isFeature": true,
+      "shortDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum accusamus deleniti sequi nulla officia quod mollitia doloremque aspernatur, eius dolor beatae sunt nam sapiente, odio omnis. Quis debitis consectetur nam?",
+      "desc": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta perspiciatis deserunt commodi enim saepe sapiente at tempore necessitatibus ratione sint iusto voluptate eaque possimus consequuntur, nulla id magnam veritatis dignissimos illum porro dolore nostrum minus laboriosam blanditiis? Architecto voluptatem enim quo facilis deleniti, doloribus fugit ea, eligendi commodi, neque deserunt.",
+      "pros": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "cons": "Dicta perspiciatis deserunt commodi enim saepe sapiente",
+      "stock": true,
+      "price": 10.0
+    },
+    {
+      "id": 5,
+      "title": "Product 5",
+      "imagePath": "http://localhost:3000/static/media/Image-Coming-Soon.586d424d.png",
+      "isFeature": true,
+      "shortDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum accusamus deleniti sequi nulla officia quod mollitia doloremque aspernatur, eius dolor beatae sunt nam sapiente, odio omnis. Quis debitis consectetur nam?",
+      "desc": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta perspiciatis deserunt commodi enim saepe sapiente at tempore necessitatibus ratione sint iusto voluptate eaque possimus consequuntur, nulla id magnam veritatis dignissimos illum porro dolore nostrum minus laboriosam blanditiis? Architecto voluptatem enim quo facilis deleniti, doloribus fugit ea, eligendi commodi, neque deserunt.",
+      "pros": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "cons": "Dicta perspiciatis deserunt commodi enim saepe sapiente",
+      "stock": true,
+      "price": 10.0
+    },
+    {
+      "id": 6,
+      "title": "Product 6",
+      "imagePath": "http://localhost:3000/static/media/Image-Coming-Soon.586d424d.png",
+      "isFeature": true,
+      "shortDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum accusamus deleniti sequi nulla officia quod mollitia doloremque aspernatur, eius dolor beatae sunt nam sapiente, odio omnis. Quis debitis consectetur nam?",
+      "desc": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta perspiciatis deserunt commodi enim saepe sapiente at tempore necessitatibus ratione sint iusto voluptate eaque possimus consequuntur, nulla id magnam veritatis dignissimos illum porro dolore nostrum minus laboriosam blanditiis? Architecto voluptatem enim quo facilis deleniti, doloribus fugit ea, eligendi commodi, neque deserunt.",
+      "pros": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "cons": "Dicta perspiciatis deserunt commodi enim saepe sapiente",
+      "stock": true,
+      "price": 10.0
+    },
+    {
+      "id": 7,
+      "title": "Product 7",
+      "imagePath": "http://localhost:3000/static/media/Image-Coming-Soon.586d424d.png",
+      "isFeature": true,
+      "shortDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum accusamus deleniti sequi nulla officia quod mollitia doloremque aspernatur, eius dolor beatae sunt nam sapiente, odio omnis. Quis debitis consectetur nam?",
+      "desc": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta perspiciatis deserunt commodi enim saepe sapiente at tempore necessitatibus ratione sint iusto voluptate eaque possimus consequuntur, nulla id magnam veritatis dignissimos illum porro dolore nostrum minus laboriosam blanditiis? Architecto voluptatem enim quo facilis deleniti, doloribus fugit ea, eligendi commodi, neque deserunt.",
+      "pros": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "cons": "Dicta perspiciatis deserunt commodi enim saepe sapiente",
+      "stock": true,
+      "price": 10.0
+    },
+    {
+      "id": 8,
+      "title": "Product 8",
+      "imagePath": "http://localhost:3000/static/media/Image-Coming-Soon.586d424d.png",
+      "isFeature": true,
+      "shortDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum accusamus deleniti sequi nulla officia quod mollitia doloremque aspernatur, eius dolor beatae sunt nam sapiente, odio omnis. Quis debitis consectetur nam?",
+      "desc": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta perspiciatis deserunt commodi enim saepe sapiente at tempore necessitatibus ratione sint iusto voluptate eaque possimus consequuntur, nulla id magnam veritatis dignissimos illum porro dolore nostrum minus laboriosam blanditiis? Architecto voluptatem enim quo facilis deleniti, doloribus fugit ea, eligendi commodi, neque deserunt.",
+      "pros": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "cons": "Dicta perspiciatis deserunt commodi enim saepe sapiente",
+      "stock": true,
+      "price": 10.0
+    },
+    {
+      "id": 9,
+      "title": "Product 9",
+      "imagePath": "http://localhost:3000/static/media/Image-Coming-Soon.586d424d.png",
+      "isFeature": true,
+      "shortDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum accusamus deleniti sequi nulla officia quod mollitia doloremque aspernatur, eius dolor beatae sunt nam sapiente, odio omnis. Quis debitis consectetur nam?",
+      "desc": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta perspiciatis deserunt commodi enim saepe sapiente at tempore necessitatibus ratione sint iusto voluptate eaque possimus consequuntur, nulla id magnam veritatis dignissimos illum porro dolore nostrum minus laboriosam blanditiis? Architecto voluptatem enim quo facilis deleniti, doloribus fugit ea, eligendi commodi, neque deserunt.",
+      "pros": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "cons": "Dicta perspiciatis deserunt commodi enim saepe sapiente",
+      "stock": true,
+      "price": 10.0
+    },
+    {
+      "id": 10,
+      "title": "Product 10",
+      "imagePath": "http://localhost:3000/static/media/Image-Coming-Soon.586d424d.png",
+      "isFeature": true,
+      "shortDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum accusamus deleniti sequi nulla officia quod mollitia doloremque aspernatur, eius dolor beatae sunt nam sapiente, odio omnis. Quis debitis consectetur nam?",
+      "desc": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta perspiciatis deserunt commodi enim saepe sapiente at tempore necessitatibus ratione sint iusto voluptate eaque possimus consequuntur, nulla id magnam veritatis dignissimos illum porro dolore nostrum minus laboriosam blanditiis? Architecto voluptatem enim quo facilis deleniti, doloribus fugit ea, eligendi commodi, neque deserunt.",
+      "pros": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "cons": "Dicta perspiciatis deserunt commodi enim saepe sapiente",
+      "stock": true,
+      "price": 10.0
+    },
+    {
+      "id": 1,
+      "title": "Product 1",
+      "imagePath": "http://localhost:3000/static/media/Image-Coming-Soon.586d424d.png",
+      "isFeature": true,
+      "shortDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum accusamus deleniti sequi nulla officia quod mollitia doloremque aspernatur, eius dolor beatae sunt nam sapiente, odio omnis. Quis debitis consectetur nam?",
+      "desc": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta perspiciatis deserunt commodi enim saepe sapiente at tempore necessitatibus ratione sint iusto voluptate eaque possimus consequuntur, nulla id magnam veritatis dignissimos illum porro dolore nostrum minus laboriosam blanditiis? Architecto voluptatem enim quo facilis deleniti, doloribus fugit ea, eligendi commodi, neque deserunt.",
+      "pros": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "cons": "Dicta perspiciatis deserunt commodi enim saepe sapiente",
+      "stock": true,
+      "price": 10.0
+    }
+  ]
+}

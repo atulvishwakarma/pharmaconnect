@@ -1,0 +1,67 @@
+.nav__links--link:not(:last-child) {
+  padding: 0 0 5px 0;
+  margin-right: 0.5rem;
+  border-bottom: 2px solid transparent;
+}
+.nav__links--link:not(:last-child):hover {
+  border-bottom-color: #fff;
+}
+
+@media screen and (min-width: 1024px) {
+  .nav__links--link:not(:last-child) {
+    margin-right: 1rem;
+  }
+  .nav__links--link a {
+    font-size: 1.125rem;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  .nav__links--link .nav__icon {
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin: -3px 3px 0 0;
+  }
+  .nav__links--link .nav__icon:last-child {
+    margin-right: 0;
+  }
+}
+
+.nav__link--user {
+  position: relative;
+}
+
+.menu__dropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+
+  background-color: #fff;
+  padding: 0.5rem 1rem;
+  color: #000;
+  font-size: 1rem;
+  border-radius: 0.25rem;
+  z-index: 9;
+  display: none;
+}
+.menu__dropdown.menu__dropdown--active {
+  display: flex;
+}
+.menu__dropdown::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border: 2px solid #fff;
+  position: absolute;
+  top: -4px;
+  right: 0;
+  left: 0;
+  transform: rotate(45deg);
+  background: #fff;
+  border-right: 0;
+  border-bottom: 0;
+  display: inline-block;
+  margin: 0 auto;
+}
+.nav__icon {
+  display: inline-block;
+}
