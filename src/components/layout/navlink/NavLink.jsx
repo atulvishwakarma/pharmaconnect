@@ -12,7 +12,7 @@ const NavLink = () => {
   const handleLogout = () => {
     logout();
     setIsDropDownActive(!isDropDownActive);
-    navigate("/login");
+    navigate("/");
   };
   const handleDropDown = () => {
     setIsDropDownActive(!isDropDownActive);
@@ -26,7 +26,7 @@ const NavLink = () => {
           </Link>
         </li>
         <li className="nav__links--link">
-          <Link to="/product-list" className="text-white text-sm">
+          <Link to="/product" className="text-white text-sm">
             Products
           </Link>
         </li>

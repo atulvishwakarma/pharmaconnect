@@ -1,12 +1,12 @@
 import React from "react";
-import FeatureProduct from "../feature-product/FeatureProduct";
 import BannerSlider from "../banner-slider/BannerSlider";
 import "./Home.css";
+import FeaturedProduct from "../product/featured-product/FeaturedProduct";
 const Home = () => {
   return (
-    <div>
+    <div className="pc__home">
       <BannerSlider />
-      <FeatureProduct />
+      <FeaturedProduct />
     </div>
   );
 };

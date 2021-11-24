@@ -1,0 +1,10 @@
+.accordion__item--content {
+  display: none;
+}
+.accordion__item--content__active {
+  display: block;
+}
+
+.accordion__item--title {
+  position: relative;
+}

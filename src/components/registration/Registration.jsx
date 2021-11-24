@@ -28,7 +28,7 @@ const Registration = () => {
     }
     setIsLoading(false);
     reset();
-    navigate("/login");
+    navigate("/");
   };
 
   return (

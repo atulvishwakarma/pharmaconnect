@@ -1,0 +1,28 @@
+.product__item--short__desc {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  height: 60px;
+}
+
+.product__item--image {
+  display: block;
+  height: 0;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  padding-bottom: 80%;
+}
+
+.product__item--image img {
+  bottom: 0;
+  display: block;
+  height: auto;
+  left: 0;
+  margin: auto;
+  max-width: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+}

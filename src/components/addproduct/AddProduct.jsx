@@ -215,8 +215,8 @@ const AddProduct = () => {
 
               <div className="mb-4 flex flex-col ">
                 <select {...register("stock")}>
-                  <option value="instock">In Stock</option>
-                  <option value="outstock">Out of Stock</option>
+                  <option value="true">In Stock</option>
+                  <option value="false">Out of Stock</option>
                 </select>
               </div>
               <div className="mb-4 flex flex-col">
