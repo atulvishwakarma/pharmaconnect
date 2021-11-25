@@ -9,7 +9,8 @@ import About from './components/about/About';
 import Contact from './components/contact/Contact'
 import Registration from "./components/registration/Registration";
 import Error404 from "./components/404error/Error404";
-import AddProduct from "./components/addproduct/AddProduct";
+// import AddProduct from "./components/addproduct/AddProduct";
+import AddProduct from './components/admin/addproduct/AddProduct'
 import { useAuth } from './contexts/AuthContext'
 import ProductList from "./components/product/product-list/ProductListing";
 import ProductDetails from "./components/product/product-details/ProductDetails";
@@ -33,7 +34,8 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Registration />} />
-          {currentUser && <Route path="/add" element={<AddProduct />} />}
+          {/* {currentUser && <Route path="/add" element={<AddProduct />} />} */}
+          {currentUser && <Route path="/admin/add" element={<AddProduct />} />}
           <Route path="*" element={<Error404 />} />
         </Routes>
       </main>

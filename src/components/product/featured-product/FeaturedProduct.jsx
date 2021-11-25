@@ -2,33 +2,30 @@ import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import FeaturedComponent from "../featured-component/FeaturedComponent";
 import { setFeaturedProducts } from "../../../redux/actions/ProductActions";
-import axios from "axios";
+
+import { fsDb } from "../../../firebase";
 const FeaturedProduct = () => {
   const products = useSelector((state) => state);
   const dispatch = useDispatch();
   const fetchFeaturedProducts = async () => {
-    const res = await axios
-      .get("http://localhost:3100/product")
-      .catch((err) => {
-        console.error(err);
-      });
-    //console.log("Featured", res.data);
-    const newFatured = res.data
-      .filter((item) => {
-        if (item.isFeature) {
-          return item;
-        }
-      })
-      .sort((a, b) => {
-        return b.id - a.id;
-      });
-    dispatch(setFeaturedProducts(newFatured));
-    //console.log(newFatured);
+    const response = fsDb.collection("products");
+    const data = await response.get();
+    const NewFeaturedList = data.docs.filter((doc) => {
+      if (doc.data().isFeatured) {
+        return doc.data();
+      }
+    });
 
-    // console.log(newS);
-    // const newSlice = newS.slice(0, 4);
+    const newData = NewFeaturedList.map((doc) => ({
+      id: doc.id,
+      ...doc.data(),
+    }));
+    // Sorting Data
+    newData.sort((a, b) => {
+      return b.lastUpdateTime - a.lastUpdateTime;
+    });
 
-    // console.log(newSlice);
+    dispatch(setFeaturedProducts(newData));
   };
   useEffect(() => {
     fetchFeaturedProducts();

@@ -1,20 +1,24 @@
-import axios from "axios";
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { setProducts } from "../../../redux/actions/ProductActions";
 import ProductComponent from "../product-component/ProductComponent";
-
+import { fsDb } from "../../../firebase";
 const ProductListing = () => {
   const products = useSelector((state) => state);
   const dispath = useDispatch();
-  console.log("Products: ", products);
   const fetchProduct = async () => {
-    const response = await axios
-      .get("http://localhost:3100/product")
-      .catch((err) => {
-        console.log(err);
-      });
-    dispath(setProducts(response.data));
+    const response = fsDb.collection("products");
+    const data = await response.get();
+    const newData = data.docs.map((doc) => ({
+      id: doc.id,
+      ...doc.data(),
+    }));
+
+    // Sort
+    newData.sort((a, b) => {
+      return b.lastUpdateTime - a.lastUpdateTime;
+    });
+    dispath(setProducts(newData));
   };
   useEffect(() => {
     fetchProduct();

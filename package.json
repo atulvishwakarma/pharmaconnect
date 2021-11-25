@@ -1,6 +1,7 @@
 {
   "name": "pharmaconnect",
-  "version": "0.1.0",
+  "version": "2.0.0",
+  "home": "http://pc.avishwakarma.in/",
   "private": true,
   "dependencies": {
     "@craco/craco": "^6.4.0",
@@ -9,7 +10,6 @@
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
     "axios": "^0.24.0",
-    "concurrently": "^6.4.0",
     "firebase": "^8.10.0",
     "json-server": "^0.17.0",
     "react": "^17.0.2",
@@ -28,9 +28,7 @@
     "start": "craco start",
     "build": "craco build",
     "test": "craco test",
-    "eject": "react-scripts eject",
-    "json-server": "json-server --watch db.json --port 3100",
-    "dev": "concurrently \"npm start\" \"npm run json-server\""
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [

@@ -7,12 +7,9 @@ import "./ProductComponent.css";
 const ProductComponent = (props) => {
   const navigate = useNavigate();
   const products = useSelector((state) => state.allProducts.products);
-  console.log(products);
-  //   const { id, title } = products[0];
 
   const randerList = products.map((product) => {
-    const { id, title, price, imagePath, shortDesc } = product;
-
+    const { id, title, imagePath, shortDesc } = product;
     const clickHandler = () => {
       navigate("{`/product/${id}`}");
     };

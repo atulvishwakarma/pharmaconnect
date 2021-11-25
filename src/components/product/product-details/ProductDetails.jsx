@@ -1,11 +1,11 @@
 import React, { useEffect } from "react";
-import axios from "axios";
 import { useParams } from "react-router";
 import { useDispatch, useSelector } from "react-redux";
 import { selectedProduct } from "../../../redux/actions/ProductActions";
 import { Button, Accordion } from "../../ui/UI";
 import { Link } from "react-router-dom";
 import { MdKeyboardArrowRight } from "react-icons/md";
+import { fsDb } from "../../../firebase";
 const ProductDetails = () => {
   const { productId } = useParams();
   const product = useSelector((state) => state.product);
@@ -14,14 +14,16 @@ const ProductDetails = () => {
     product;
 
   const fetchProductDetail = async () => {
-    const response = await axios
-      .get(`http://localhost:3100/product/${productId}`)
-      .catch((err) => {
-        console.error(err);
-      });
-    dispatch(selectedProduct(response.data));
+    const productRef = fsDb.collection("products").doc(`${productId}`);
+
+    const data = await productRef.get();
+    if (!data.exists) {
+      console.log("Data Not Exists");
+    }
+    dispatch(selectedProduct(data.data()));
+    console.log("Atul", data.data());
   };
-  console.log(product);
+
   useEffect(() => {
     if (productId && product !== "") {
       fetchProductDetail();
