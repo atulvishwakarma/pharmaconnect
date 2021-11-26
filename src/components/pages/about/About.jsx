@@ -1,13 +1,12 @@
 import React from "react";
+import PageTitle from "../../title/PageTitle";
 import "./About.css";
 const About = () => {
   return (
     <div className="pc__about">
       <div className="container mx-auto py-4">
         <div className="pc__about--block">
-          <h1 className="text-2xl font-semibold mb-4 text-green-600">
-            <span className="border-b-2 border-green-600">About</span>
-          </h1>
+          <PageTitle className="about__title">About us</PageTitle>
           <div className="pc__about--content">
             <h2>What is Lorem Ipsum?</h2>
             <p>

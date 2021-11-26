@@ -4,6 +4,7 @@ import FeaturedComponent from "../featured-component/FeaturedComponent";
 import { setFeaturedProducts } from "../../../redux/actions/ProductActions";
 
 import { fsDb } from "../../../firebase";
+import PageTitle from "../../title/PageTitle";
 const FeaturedProduct = () => {
   const products = useSelector((state) => state);
   const dispatch = useDispatch();
@@ -34,11 +35,9 @@ const FeaturedProduct = () => {
     <div className="product__list">
       <div className="container mx-auto px-4">
         <div className="product__list--block py-10">
-          <h1 className="product__list--title text-2xl font-semibold mb-4 text-green-600">
-            <span className="border-b-2 border-green-600">
-              Feature Products
-            </span>
-          </h1>
+          <PageTitle className="product__list--title">
+            Feature Products
+          </PageTitle>
 
           <div className="product__grid grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 ">
             <FeaturedComponent />

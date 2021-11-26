@@ -3,10 +3,11 @@
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3;
+}
+.product__grid--view .product__item--short__desc {
   height: 60px;
 }
-
-.product__item--image {
+.product__grid--view .product__item--image {
   display: block;
   height: 0;
   overflow: hidden;
@@ -15,7 +16,7 @@
   padding-bottom: 80%;
 }
 
-.product__item--image img {
+.product__grid--view .product__item--image img {
   bottom: 0;
   display: block;
   height: auto;

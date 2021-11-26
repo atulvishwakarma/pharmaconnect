@@ -1,3 +1,15 @@
 .header__brand img {
   width: 85px;
 }
+
+@media only screen and (max-width: 992px) {
+  .header__brand img {
+    width: 65px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .header__brand img {
+    width: 55px;
+  }
+}

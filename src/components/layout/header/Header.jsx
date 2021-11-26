@@ -13,11 +13,12 @@ const Header = () => {
           <div className="header__brand">
             <Link to="/" rel="home link" className="flex items-center">
               <img src={logo} alt="Pharma Connect" />
-              <span className="inline-block text-xl ml-2 text-white">
+              <span className="inline-block text-base lg:text-xl ml-2 text-white">
                 Pharma Connect
               </span>
             </Link>
           </div>
+
           <div className="header__links flex flex-1 justify-end">
             <NavLink />
           </div>

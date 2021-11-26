@@ -6,6 +6,7 @@ import { Button, Accordion } from "../../ui/UI";
 import { Link } from "react-router-dom";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import { fsDb } from "../../../firebase";
+import "./ProductDetails.css";
 const ProductDetails = () => {
   const { productId } = useParams();
   const product = useSelector((state) => state.product);

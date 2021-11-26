@@ -5,8 +5,8 @@ import './App.css'
 import Login from "./components/login/Login";
 import { Routes, Route, } from "react-router";
 import Home from './components/home/Home';
-import About from './components/about/About';
-import Contact from './components/contact/Contact'
+import About from './components/pages/about/About';
+import Contact from './components/pages/contact/Contact'
 import Registration from "./components/registration/Registration";
 import Error404 from "./components/404error/Error404";
 // import AddProduct from "./components/addproduct/AddProduct";

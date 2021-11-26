@@ -1,4 +1,4 @@
-/* .product__item--short__desc {
+.product__item--featured .product__item--short__desc {
   overflow: hidden;
   display: -webkit-box;
   -webkit-box-orient: vertical;
@@ -6,7 +6,7 @@
   height: 60px;
 }
 
-.product__item--image {
+.product__item--featured .product__item--image {
   display: block;
   height: 0;
   overflow: hidden;
@@ -15,7 +15,7 @@
   padding-bottom: 80%;
 }
 
-.product__item--image img {
+.product__item--featured .product__item--image img {
   bottom: 0;
   display: block;
   height: auto;
@@ -25,4 +25,4 @@
   position: absolute;
   right: 0;
   top: 0;
-} */
+}

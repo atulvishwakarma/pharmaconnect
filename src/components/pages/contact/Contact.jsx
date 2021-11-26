@@ -1,17 +1,15 @@
 import React from "react";
 import "./Contact.css";
-import Card from "../ui/card/Card";
-import FileUploads from "../fileupload/FileUploads";
+import { Card } from "../../ui/UI";
+import FileUploads from "../../fileupload/FileUploads";
+import PageTitle from "../../title/PageTitle";
 const Contact = () => {
   return (
     <div className="pc__contact">
       <div className="container mx-auto py-4">
         <Card>
           <div className="pc__contact--title">
-            <h1 className="text-2xl font-semibold mb-4 text-green-600">
-              <span className="border-b-2 border-green-600">Contact</span>
-            </h1>
-
+            <PageTitle className="pc__contact--title">Contact</PageTitle>
             <FileUploads />
           </div>
         </Card>

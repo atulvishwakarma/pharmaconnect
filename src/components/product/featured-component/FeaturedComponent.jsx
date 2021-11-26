@@ -17,7 +17,7 @@ const FeaturedComponent = (props) => {
     return (
       <Card
         key={id}
-        className="product__card product__item w-full transition duration-500 ease-in-out hover:shadow-xl"
+        className="product__card product__item product__item--featured  w-full transition duration-500 ease-in-out hover:shadow-xl"
       >
         <Link to={`/product/${id}`}>
           <div className="product__item--inner">
