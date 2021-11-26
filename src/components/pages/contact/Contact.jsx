@@ -6,7 +6,7 @@ import PageTitle from "../../title/PageTitle";
 const Contact = () => {
   return (
     <div className="pc__contact">
-      <div className="container mx-auto py-4">
+      <div className="container mx-auto py-4 px-4">
         <Card>
           <div className="pc__contact--title">
             <PageTitle className="pc__contact--title">Contact</PageTitle>

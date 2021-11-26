@@ -21,30 +21,45 @@ const NavLink = () => {
     <nav className="nav">
       <ul className="nav__links flex">
         <li className="nav__links--link">
-          <Link to="/" className="text-white text-sm">
+          <Link to="/" className="text-white text-lg md:text-sm">
             Home
           </Link>
         </li>
         <li className="nav__links--link">
-          <Link to="/product" className="text-white text-sm">
+          <Link to="/product" className="text-white text-lg md:text-sm">
             Products
           </Link>
         </li>
+        {currentUser && (
+          <li className="nav__links--link">
+            <Link to="/admin/add" className="text-white text-lg md:text-sm">
+              Add Products
+            </Link>
+          </li>
+        )}
         <li className="nav__links--link">
-          <Link to="/about" className="text-white text-sm">
+          <Link to="/about" className="text-white text-lg md:text-sm">
             About
           </Link>
         </li>
         <li className="nav__links--link">
-          <Link to="/contact" className="text-white text-sm">
+          <Link to="/contact" className="text-white text-lg md:text-sm">
             Contact
           </Link>
         </li>
         {currentUser && (
           <li className="nav__links--link nav__link--user">
             <button
+              onClick={handleLogout}
+              className="text-white  nav__logout md:hidden text-lg md:text-sm"
+            >
+              <MdAccountCircle className="text-2xl mr-1 inline-block nav__icon" />
+              <span>Logout</span>
+            </button>
+
+            <button
               onClick={handleDropDown}
-              className="text-white text-sm nav__logout"
+              className="text-white  nav__logout hidden md:flex text-lg md:text-sm"
             >
               <MdAccountCircle className="text-lg inline-block nav__icon" />{" "}
               <span>{currentUser.displayName || "Hi"}</span>

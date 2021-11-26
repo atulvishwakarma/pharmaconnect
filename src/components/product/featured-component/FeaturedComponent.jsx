@@ -7,7 +7,7 @@ import "./ProductComponent.css";
 const FeaturedComponent = (props) => {
   const navigate = useNavigate();
   const products = useSelector((state) => state.featuredProduct.products);
-  console.log("feature", products);
+  //console.log("feature", products);
   const clickHandler = () => {
     navigate("{`/product/${id}`}");
   };

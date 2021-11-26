@@ -1,5 +1,26 @@
+/*Fixed Header*/
+
+:root {
+  --header_height: 50px;
+}
+
+@media only screen and (max-width: 767px) {
+  :root {
+    --header_height: 40px;
+  }
+}
+.header__fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: block;
+  height: var(--header_height);
+  z-index: 99;
+}
 .pharma__page--main {
   display: flex;
   flex-direction: column;
   min-height: calc(100vh - 157px);
+  margin-top: var(--header_height);
 }

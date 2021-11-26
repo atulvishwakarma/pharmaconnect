@@ -11,3 +11,9 @@ h3 {
   position: relative;
   text-align: center;
 }
+
+@media screen and (max-width: 767px) {
+  .slick-slide img {
+    min-height: 150px;
+  }
+}

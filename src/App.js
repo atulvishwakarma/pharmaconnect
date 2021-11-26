@@ -9,7 +9,6 @@ import About from './components/pages/about/About';
 import Contact from './components/pages/contact/Contact'
 import Registration from "./components/registration/Registration";
 import Error404 from "./components/404error/Error404";
-// import AddProduct from "./components/addproduct/AddProduct";
 import AddProduct from './components/admin/addproduct/AddProduct'
 import { useAuth } from './contexts/AuthContext'
 import ProductList from "./components/product/product-list/ProductListing";
@@ -17,9 +16,11 @@ import ProductDetails from "./components/product/product-details/ProductDetails"
 
 function App() {
   const { currentUser } = useAuth();
+
+
   return (
     <div className="App">
-      <header id="page__header" className="pharma__page--header">
+      <header id="page__header" className="pharma__page--header header__fixed sticky top-0">
         <Header></Header>
       </header>
       <main id="page__main" className="pharma__page--main ">

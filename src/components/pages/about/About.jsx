@@ -4,7 +4,7 @@ import "./About.css";
 const About = () => {
   return (
     <div className="pc__about">
-      <div className="container mx-auto py-4">
+      <div className="container mx-auto py-4 px-4">
         <div className="pc__about--block">
           <PageTitle className="about__title">About us</PageTitle>
           <div className="pc__about--content">
