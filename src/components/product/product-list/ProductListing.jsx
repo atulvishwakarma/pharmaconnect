@@ -6,12 +6,17 @@ import { fsDb } from "../../../firebase";
 import PageTitle from "../../title/PageTitle";
 import { MdViewModule, MdViewList } from "react-icons/md";
 import { Spinner } from "../../ui/UI";
+import { Link } from "react-router-dom";
+import { MdKeyboardArrowRight } from "react-icons/md";
 const ProductListing = () => {
   const [gridView, setGridView] = useState(true);
   const [listView, setListView] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
-  // const products = useSelector((state) => state);
+  const [searchterm, setSearchterm] = useState("");
   const dispath = useDispatch();
+  const searcHandle = (event) => {
+    setSearchterm(event.target.value);
+  };
   const fetchProduct = async () => {
     setIsLoading(true);
     const response = fsDb.collection("products");
@@ -43,6 +48,37 @@ const ProductListing = () => {
   return (
     <div className="product__list">
       <div className="container mx-auto px-4">
+        <div className="pc__breadcrum">
+          <div className="container mx-auto py-2">
+            <ul className="flex">
+              <li className="">
+                <Link to="/">
+                  <span className="text-green-600">Home</span>
+                </Link>
+                <MdKeyboardArrowRight className="inline-block mx-1 text-green-600" />
+              </li>
+              <li className="">
+                <span>Products</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="Search__block">
+          <div className="search__bar bg-green-100 py-16 px-4">
+            <div className="search__bar--input max-w-xs sm:max-w-xl mx-auto">
+              <input
+                type="search"
+                name="search"
+                id="search"
+                placeholder="Search..."
+                className="border rounded-full border-green-400 focus:outline-none focus:ring-2 focus:ring-green-600 focus:border-transparent w-full"
+                onChange={searcHandle}
+              />
+              {/* <input class="border border-transparent focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent" /> */}
+            </div>
+          </div>
+        </div>
         <div className="product__list--block py-10">
           <PageTitle className="product__list--title">Products</PageTitle>
           <div className="toolbar mb-5">
@@ -89,7 +125,11 @@ const ProductListing = () => {
                 <Spinner />
               </div>
             ) : (
-              <ProductComponent listView={listView} action="Learn More" />
+              <ProductComponent
+                listView={listView}
+                action="Learn More"
+                term={searchterm}
+              />
             )}
           </div>
         </div>

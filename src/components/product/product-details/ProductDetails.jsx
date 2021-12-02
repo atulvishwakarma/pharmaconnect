@@ -11,7 +11,7 @@ const ProductDetails = () => {
   const { productId } = useParams();
   const product = useSelector((state) => state.product);
   const dispatch = useDispatch();
-  const { id, title, imagePath, shortDesc, desc, pros, cons, stock, price } =
+  const { id, title, imagePath, shortDesc, desc, pros, cons, stock, amount } =
     product;
 
   const fetchProductDetail = async () => {
@@ -75,8 +75,8 @@ const ProductDetails = () => {
                   <span className="text-red-400">Out of Stock</span>
                 )}
               </div>
-              <div className="pc__prodcut--price mb-3 text-base">
-                Rs.{price} /-
+              <div className="pc__prodcut--price mb-3 text-lg font-semibold text-gray-500">
+                Rs.&nbsp;{amount} /-
               </div>
               <div className="pc__prodcut--detail__actions">
                 <div className="pc__product--add__to__card">

@@ -26,7 +26,7 @@ const NavLink = () => {
           </Link>
         </li>
         <li className="nav__links--link">
-          <Link to="/product" className="text-white text-lg md:text-sm">
+          <Link to="/products" className="text-white text-lg md:text-sm">
             Products
           </Link>
         </li>

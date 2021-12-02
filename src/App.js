@@ -29,7 +29,7 @@ function App() {
 
           <Route path="/" element={<Home />} />
 
-          <Route path="/product" element={<ProductList />} />
+          <Route path="/products" element={<ProductList />} />
           <Route path="/product/:productId" element={<ProductDetails />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
@@ -37,7 +37,7 @@ function App() {
           <Route path="/register" element={<Registration />} />
           {/* {currentUser && <Route path="/add" element={<AddProduct />} />} */}
           {currentUser && <Route path="/admin/add" element={<AddProduct />} />}
-          <Route path="*" element={<Error404 />} />
+          {/* <Route path="*" element={<Error404 />} /> */}
         </Routes>
       </main>
       <footer id="page__footer" className="pharma__page--footer">

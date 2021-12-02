@@ -1,4 +1,5 @@
 import React from "react";
+import { phone } from "../../../user-config/UserConfig";
 
 const Footer = () => {
   return (
@@ -12,7 +13,7 @@ const Footer = () => {
           </div>
           <div className="footer__contact">
             <p className="text-center md:text-right text-base text-white">
-              Contact: &nbsp; <a href="tel:+919691058855">+91-9691058855</a>
+              Contact: &nbsp; <a href={`tel:${phone}`}>{phone}</a>
             </p>
           </div>
         </div>
